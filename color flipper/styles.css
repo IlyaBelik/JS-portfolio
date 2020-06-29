@@ -1,0 +1,38 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, red, blue);
+}
+
+.colorbtn {
+    padding: 0.25rem 0.5rem;
+    border: 3px solid #fefefe;
+    border-radius: 50px;
+    color: #fefefe;
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    outline: none;
+}
+
+.text {
+    font-family: fantasy;
+}
+
+.colorbtn:hover {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, red);
+    animation: slidebg 5s linear infinite;
+}
+
+@keyframes slidebg {
+    to {
+        background-position: 20vw;
+    }
+}
+
+.hex {
+    font-size: 3rem;
+}
